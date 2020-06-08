@@ -16,7 +16,16 @@
     </tr>
   </thead>
   <tbody>
+  <% @boards.each do |board| %>
     <tr>
+      <th><%= board.id %></th>
+      <td><%= board.title %></th>
+      <td><%= board.name %></th>
+      <td><%= board.created_at %></th>
+      <td><%= board.updated_at %></th>
+    </tr>
+  <% end %>
+    <%# <tr>
       <th>1</th>
       <td>雑談掲示板</td>
       <td>Taro</td>
@@ -29,6 +38,6 @@
       <td>Ken</td>
       <td>2018年4月1日</td>
       <td>2018年4月15日</td>
-    </tr>
+    </tr> %>
   </tbody>
 </table>
